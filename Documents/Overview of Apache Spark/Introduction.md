@@ -5,11 +5,14 @@ on Hadoop YARN,
 on Mesos, or 
 on Kubernetes.
 
+![image](https://user-images.githubusercontent.com/32897934/119871475-1a00bc00-bf40-11eb-99a1-358bc1b646a1.png)
 
-![image](https://user-images.githubusercontent.com/32897934/119866711-b922b500-bf3a-11eb-8577-52b6c9ea9580.png)
 
 Components of Spark
 components of Spark ecosystem like Spark core component, Spark SQL, Spark Streaming, Spark MLlib, Spark GraphX and SparkR.
+
+![image](https://user-images.githubusercontent.com/32897934/119869102-7b735b80-bf3d-11eb-954b-9d96fbe7cf29.png)
+
 Apache Spark Core:
 The key features of Apache Spark Core are:
 
@@ -27,19 +30,14 @@ operations performed on RDDs:
   - narrow transformations: Narrow transformation does not require shuffle or reorganizing data between partitions. For example, map',filter', etc. Narrow transformations will be stacked together, allowing such transformations to be performed in parallel on different partitions.
   - Wide transformations: such as groupByKey, reduceByKey, etc. Within these transformations, the data needed for the processing can be located in several partitions of the parent RDD that need to be combined. To implement these operations, Spark must perform a shuffle by moving data across the cluster and forming a new stage with a new set of partitions
 
+![image](https://user-images.githubusercontent.com/32897934/119871650-4ae0f100-bf40-11eb-8328-90d9ed7eac4d.png)
+
 
 - Action: In Transformation, RDDs are created from each other. But when we want to work with the actual dataset, then, at that point we use Action.
 
 DAG - Spark defines tasks that can be computed in parallel with the partitioned data on the cluster. With these defined tasks, Spark builds a logical flow of operations that can be represented as a directional and acyclic graph, also known as DAG (Directed Acyclic Graph), where the node represents an RDD partition and the edge represents a data transformation.
 
-
-![image](https://user-images.githubusercontent.com/32897934/119869102-7b735b80-bf3d-11eb-954b-9d96fbe7cf29.png)
-
-The following figure gives a detailed explanation of the differences between processing in Spark and Hadoop.
-![image](https://user-images.githubusercontent.com/32897934/119867659-be343400-bf3b-11eb-9eaa-e6ab405dafad.png)
-![image](https://user-images.githubusercontent.com/32897934/119867665-c3917e80-bf3b-11eb-86fd-b2735641eefd.png)
-
-![image](https://user-images.githubusercontent.com/32897934/119867967-15d29f80-bf3c-11eb-9095-c1392af1e9c5.png)
+Screenshot 2021-05-27 at 11.08.27 PM![image](https://user-images.githubusercontent.com/32897934/119871850-7e238000-bf40-11eb-8d03-583cfd332305.png)
 
 
 
