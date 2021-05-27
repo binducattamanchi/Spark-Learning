@@ -9,7 +9,19 @@ The key features of Apache Spark Core are:
 - It overcomes the snag of MapReduce by using in-memory computation.
 
 Spark Core is embedded with a special collection called RDD (resilient distributed dataset).
-RDD - partitioning of data across all nodes
+RDD - logical partitioning of data across all nodes
+RDDs are the building blocks of any Spark application. RDDs Stands for:
+
+ - Resilient: Fault tolerant and is capable of rebuilding data on failure
+ - Distributed: Distributed data among the multiple nodes in a cluster
+ - Dataset: Collection of partitioned data with values
+
+
+It is a layer of abstracted data over the distributed collection. It is immutable in nature and follows lazy transformations. 
+
+![image](https://user-images.githubusercontent.com/32897934/119876872-fb9dbf00-bf45-11eb-94ea-cf7b6d9d0dad.png)
+
+
 operations performed on RDDs: 
 - Transformation: It is a function that produces new RDD from the existing RDDs.
 2 groups of transformations can be applied to RDD, namely narrow transformations, and wide transformations.
@@ -20,6 +32,10 @@ operations performed on RDDs:
 
 
 - Action: In Transformation, RDDs are created from each other. But when we want to work with the actual dataset, then, at that point we use Action.
+
+
+![image](https://user-images.githubusercontent.com/32897934/119876755-da3cd300-bf45-11eb-8fa0-8d39529b01c6.png)
+
 
 DAG - Spark defines tasks that can be computed in parallel with the partitioned data on the cluster. With these defined tasks, Spark builds a logical flow of operations that can be represented as a directional and acyclic graph, also known as DAG (Directed Acyclic Graph), where the node represents an RDD partition and the edge represents a data transformation.
 
