@@ -1,6 +1,5 @@
 
-![image](https://user-images.githubusercontent.com/32897934/119881496-f98a2f00-bf4a-11eb-82f3-579613a346f7.png)
-
+![image](https://user-images.githubusercontent.com/32897934/119881793-538af480-bf4b-11eb-9304-7be2aa48669f.png)
 
 
 Which Storage Level to Choose?
