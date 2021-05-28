@@ -1,6 +1,6 @@
 http://spark-configuration.luminousmen.com/
 https://spoddutur.github.io/spark-notes/distribution_of_executors_cores_and_memory_for_spark_application.html
-
+http://site.clairvoyantsoft.com/understanding-resource-allocation-configurations-spark-application/
 
 - Running executors with too much memory often results in excessive garbage collection delays.
 - Running tiny executors (with a single core and just enough memory needed to run a single task, for example) throws away the benefits that come from running multiple tasks in a single JVM.
