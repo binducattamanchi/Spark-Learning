@@ -4,6 +4,9 @@ The coalesce method reduces the number of partitions in a DataFrame. Coalesce av
 What is Repartitioning?
 The repartition method can be used to either increase or decrease the number of partitions in a DataFrame. Repartition is a full Shuffle operation, whole data is taken out from existing partitions and equally distributed into newly formed partitions.
 
+![image](https://user-images.githubusercontent.com/32897934/120019060-9c06e880-c005-11eb-9f3c-78c4725e5745.png)
+
+
 Where to use what?
 Let’s look at the below example for the answer.
 ![image](https://user-images.githubusercontent.com/32897934/119974516-6268ba00-bfd2-11eb-998b-17d886daa422.png)
