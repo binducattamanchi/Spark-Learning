@@ -12,3 +12,5 @@ Kryo serializer is in compact binary format and offers processing 10x faster tha
 To set the serializer properties:
 conf.set(“spark.serializer”, “org.apache.spark.serializer.KryoSerializer”)
 
+
+![image](https://user-images.githubusercontent.com/32897934/120025782-d32dc780-c00e-11eb-9a3e-4fc48663d565.png)
